@@ -84,10 +84,9 @@ class: center
 
 # File $\longrightarrow$ New File $\longrightarrow$ R Markdown
 
-```{r out.width="100%"}
+```{r out.width="75%"}
 knitr::include_graphics("images/rmd-new.png")
 ```
-
 
 ---
 class: center
@@ -251,10 +250,12 @@ tab_model(mod1)
 
 ---
 
-background-image: url("images/pune.jpg")
-background-size: 50%
+class: center, middle
 
-# Background
+background-image: url("images/pune.jpg")
+background-size: cover
+
+# .white[Beautiful Pune !]
 
 ---
 
