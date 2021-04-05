@@ -4,10 +4,9 @@
     <title>Make Slides using xaringan</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ajay Koli" />
-    <meta name="date" content="2021-03-30" />
+    <meta name="date" content="2021-04-05" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
@@ -22,7 +21,8 @@
     <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
     <script src="libs/grViz-binding/grViz.js"></script>
     <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="rladiesfonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/my-theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/my-fonts.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -42,46 +42,46 @@ background-size: cover
 ### .b.white[Lightning talk at R-Ladies Pune]
 
 
-### .b.white[30 March 2021]
+### .b.white[05 April 2021]
 
 ---
 
 background-image: url("images/xie.jpg"), url("https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png")
 background-size: 25%, 15%
-background-position: 99% 1%, 95% 90%
+background-position: 99% 40%, 92% 90%
 
-# Xaringan (sha-ringan) package
+# Xaringan (*sha-ringan*) pkg
 
 - created by: [Xie Yihui](https://yihui.org/en/)
 
 --
 
-- [why](https://yihui.org/en/2017/08/why-xaringan-remark-js/): "never truly happy with any of the Markdown-based slide generation tools"
+- [why](https://yihui.org/en/2017/08/why-xaringan-remark-js/): "never truly happy with any of the &lt;br&gt;Markdown-based slide generation tools"
 
 --
 
-- [what](https://bookdown.org/yihui/rmarkdown/xaringan.html)  "is an R Markdown extension based on the JavaScript library remark.js &lt;br&gt;to generate HTML5 presentations of a different style"
+- [what](https://bookdown.org/yihui/rmarkdown/xaringan.html)  "is an R Markdown extension based on &lt;br&gt;the JavaScript library remark.js to generate &lt;br&gt;HTML5 presentations of a different style"
 
 ---
 class: center
 
-# File `\(\longrightarrow\)` New File `\(\longrightarrow\)` R Markdown
+## File `\(\rightarrow\)` New File `\(\rightarrow\)` R Markdown
 
-&lt;img src="images/rmd-new.png" width="75%" /&gt;
+&lt;img src="images/rmd-new.png" width="100%" /&gt;
 
 ---
 class: center
 
-# Template `\(\rightarrow\)` Ninja Presentation
+## Template `\(\rightarrow\)` Ninja Presentation
 
-&lt;img src="images/xar1.png" width="50%" /&gt;
+&lt;img src="images/xar1.png" width="80%" /&gt;
 
 ---
 class: center
 
 # Save this `.Rmd` file
 
-&lt;img src="images/xar2.png" width="50%" /&gt;
+&lt;img src="images/xar2.png" width="80%" /&gt;
 
 ---
 class: center
@@ -89,14 +89,14 @@ class: center
 .pull-left[
 ### Addins `\(\rightarrow\)` Inifinite Moon Reader
 
-&lt;img src="images/xar3.png" width="65%" /&gt;
+&lt;img src="images/xar3.png" width="100%" /&gt;
 ]
 
 --
 
 .pull-right[
 
-### xaringan output 
+### Viewer 
 
 &lt;img src="images/xar4.png" width="566" /&gt;
 ]
@@ -107,29 +107,25 @@ class: center
 .pull-left[
 ### Addins `\(\rightarrow\)` Inifinite Moon Reader
 
-&lt;img src="images/xar3.png" width="65%" /&gt;
+&lt;img src="images/xar3.png" width="100%" /&gt;
 ]
 
 .pull-right[
 
-### xaringan slide `\(\rightarrow\)` browser 
+### Browser 
 
 &lt;img src="images/xar5-browser.png" width="566" /&gt;
 ]
-
---
-
-- We need to click `Inifinite Moon Reader` only once to start the slideshow. To see the changes made in the slides just save the document `ctrl + s`
 
 ---
 class: center
 
 .pull-left[
 
-# Copy-paste culture ...
+# copy-paste
 
-<div id="htmlwidget-22032b0f68f5fb11f0f0" style="width:504px;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-22032b0f68f5fb11f0f0">{"x":{"diagram":"\ndigraph boxes_and_circles {\n\n  # a \"graph\" statement\n  graph [overlap = true, fontsize = 10]\n\n  # several \"node\" statements\n  node [shape = box,\n        fontname = Helvetica]\n  software1; software2; software3; software4; software5; software6; software7;  doc; pdf; slides\n\n  node [shape = circle,\n        fixedsize = true,\n        width = 0.9] // sets as circles\n  images; tables; stats; plots; refs\n\n  # several \"edge\" statements\n  software1 -> images software2 -> tables software3 -> stats  software4 -> plots software5 -> refs software6 -> doc  software6 -> pdf software7 -> slides\n  images -> doc tables -> doc stats -> doc plots -> doc refs -> doc\n  doc -> pdf\n  pdf -> slides\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c1bdc0cd31fe5e021f74" style="width:504px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1bdc0cd31fe5e021f74">{"x":{"diagram":"\ndigraph boxes_and_circles {\n\n  # a \"graph\" statement\n  graph [overlap = true, fontsize = 10]\n\n  # several \"node\" statements\n  node [shape = box,\n        fontname = Helvetica]\n  software1; software2; software3; software4; software5; software6; software7;  doc; pdf; slides\n\n  node [shape = circle,\n        fixedsize = true,\n        width = 0.9] // sets as circles\n  images; tables; stats; plots; refs\n\n  # several \"edge\" statements\n  software1 -> images software2 -> tables software3 -> stats  software4 -> plots software5 -> refs software6 -> doc  software6 -> pdf software7 -> slides\n  images -> doc tables -> doc stats -> doc plots -> doc refs -> doc\n  doc -> pdf\n  pdf -> slides\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 ]
 
@@ -137,9 +133,9 @@ class: center
 
 .pull-right[
 
-# crumbles easily
+# .right[crumbles]
 
-![](https://media.giphy.com/media/mEEKBRIQy6iucFVCi9/giphy.gif)&lt;!-- --&gt;
+&lt;img src="https://media.giphy.com/media/mEEKBRIQy6iucFVCi9/giphy.gif" width="65%" style="display: block; margin: auto 0 auto auto;" /&gt;
 
 ]
 
@@ -150,8 +146,8 @@ class: center
 &lt;img src="slides_files/figure-html/unnamed-chunk-10-1.png" width="1440" /&gt;
 
 ---
+class: center
 
-.pull-left[
 # Table
 
 &lt;table style="border-collapse:collapse; border:none;"&gt;
@@ -199,16 +195,19 @@ class: center
 &lt;/tr&gt;
 
 &lt;/table&gt;
-]
 
---
+---
 
-.pull-right[
-# Text In-line output
+# In-line value
 
 ###- The total sample size was `\(n\)` = 344
 
-]
+--
+
+
+
+###- Plant yield indeed differed between groups, `\(\Delta M = -5.62\)`, 95\% CI `\([-10.35, -0.88]\)`, `\(t(21.88) = -2.46\)`, `\(p = .022\)`.
+
 
 ---
 
@@ -222,10 +221,10 @@ background-size: cover
 ---
 
 background-image: url("https://raw.githubusercontent.com/gadenbuie/xaringanthemer/master/man/figures/logo.png")
-background-size: 15%
-background-position: 90% 1%
+background-size: 10%
+background-position: 99% 7%
 
-# xaringan + [xaringanthemer](https://github.com/gadenbuie/xaringanthemer):
+# xaringan + [xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
 
 &lt;br&gt;
 &lt;br&gt;
@@ -240,8 +239,8 @@ background-position: 90% 1%
 ---
 
 background-image: url("https://raw.githubusercontent.com/jhelvy/xaringanBuilder/master/man/figures/hex_sticker.png")
-background-size: 15%
-background-position: 90% 1%
+background-size: 10%
+background-position: 99% 7%
 
 # xaringan + [xaringanBuilder](https://github.com/jhelvy/xaringanBuilder)
 
@@ -270,8 +269,9 @@ class: center
 
 &lt;img src="slides_files/figure-html/instructor-img-1.png" width="50%" /&gt;
 
-.f2[<i class="fas  fa-laptop "></i> [Assist. Professor &lt;br&gt;Vishwakarm University, &lt;br&gt;Pune - India](https://www.vupune.ac.in/) &lt;br&gt;
-<i class="fas  fa-link "></i> [https://r4b.netlify.app/](https://r4b.netlify.app/) &lt;br&gt;
+.f2[<i class="fas  fa-chalkboard-teacher "></i> [Assist. Professor &lt;br&gt;Vishwakarm University, &lt;br&gt;Pune - India](https://www.vupune.ac.in/) 
+&lt;br&gt;<i class="fas  fa-envelope "></i> [koliajaykumar@gmail.com](koliajaykumar@gmail.com)
+&lt;br&gt;<i class="fas  fa-link "></i> [https://r4b.netlify.app/](https://r4b.netlify.app/) &lt;br&gt;
 <i class="fab  fa-twitter "></i>[@ajay_kolii](https://twitter.com/ajay_kolii)] 
 ]
 
@@ -293,8 +293,7 @@ class: center
 "highlightLanguage": ["r", "css", "yaml"],
 "slideNumberFormat": "%current%/%total%",
 "highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9"
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

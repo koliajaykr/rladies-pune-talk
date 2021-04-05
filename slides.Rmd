@@ -4,7 +4,7 @@ author: "Ajay Koli"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["default", "rladies", "rladiesfonts.css"]
+    css: ["default", "css/my-theme.css", "css/my-fonts.css"]
     seal: false
     lib_dir: libs
     nature:
@@ -13,7 +13,7 @@ output:
       slideNumberFormat: "%current%/%total%" 
       highlightLines: true
       countIncrementalSlides: false
-      ratio: "16:9"
+      #ratio: "16:9"
 ---
 
 class: hide-count, center, middle
@@ -65,35 +65,35 @@ background-size: cover
 
 background-image: url("images/xie.jpg"), url("https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png")
 background-size: 25%, 15%
-background-position: 99% 1%, 95% 90%
+background-position: 99% 40%, 92% 90%
 
-# Xaringan (sha-ringan) package
+# Xaringan (*sha-ringan*) pkg
 
 - created by: [Xie Yihui](https://yihui.org/en/)
 
 --
 
-- [why](https://yihui.org/en/2017/08/why-xaringan-remark-js/): "never truly happy with any of the Markdown-based slide generation tools"
+- [why](https://yihui.org/en/2017/08/why-xaringan-remark-js/): "never truly happy with any of the <br>Markdown-based slide generation tools"
 
 --
 
-- [what](https://bookdown.org/yihui/rmarkdown/xaringan.html)  "is an R Markdown extension based on the JavaScript library remark.js <br>to generate HTML5 presentations of a different style"
+- [what](https://bookdown.org/yihui/rmarkdown/xaringan.html)  "is an R Markdown extension based on <br>the JavaScript library remark.js to generate <br>HTML5 presentations of a different style"
 
 ---
 class: center
 
-# File $\longrightarrow$ New File $\longrightarrow$ R Markdown
+## File $\rightarrow$ New File $\rightarrow$ R Markdown
 
-```{r out.width="75%"}
+```{r out.width="100%"}
 knitr::include_graphics("images/rmd-new.png")
 ```
 
 ---
 class: center
 
-# Template $\rightarrow$ Ninja Presentation
+## Template $\rightarrow$ Ninja Presentation
 
-```{r out.width="50%"}
+```{r out.width="80%"}
 knitr::include_graphics("images/xar1.png")
 ```
 
@@ -102,7 +102,7 @@ class: center
 
 # Save this `.Rmd` file
 
-```{r out.width="50%"}
+```{r out.width="80%"}
 knitr::include_graphics("images/xar2.png")
 ```
 
@@ -112,7 +112,7 @@ class: center
 .pull-left[
 ### Addins $\rightarrow$ Inifinite Moon Reader
 
-```{r out.width="65%"}
+```{r out.width="100%"}
 knitr::include_graphics("images/xar3.png")
 ```
 ]
@@ -121,7 +121,7 @@ knitr::include_graphics("images/xar3.png")
 
 .pull-right[
 
-### xaringan output 
+### Viewer 
 
 ```{r }
 knitr::include_graphics("images/xar4.png")
@@ -134,30 +134,26 @@ class: center
 .pull-left[
 ### Addins $\rightarrow$ Inifinite Moon Reader
 
-```{r out.width="65%"}
+```{r out.width="100%"}
 knitr::include_graphics("images/xar3.png")
 ```
 ]
 
 .pull-right[
 
-### xaringan slide $\rightarrow$ browser 
+### Browser 
 
 ```{r }
 knitr::include_graphics("images/xar5-browser.png")
 ```
 ]
 
---
-
-- We need to click `Inifinite Moon Reader` only once to start the slideshow. To see the changes made in the slides just save the document `ctrl + s`
-
 ---
 class: center
 
 .pull-left[
 
-# Copy-paste culture ...
+# copy-paste
 
 ```{r}
 grViz("
@@ -191,9 +187,9 @@ digraph boxes_and_circles {
 
 .pull-right[
 
-# crumbles easily
+# .right[crumbles]
 
-```{r}
+```{r out.width="65%", fig.align='right'}
 knitr::include_graphics("https://media.giphy.com/media/mEEKBRIQy6iucFVCi9/giphy.gif")
 ```
 
@@ -224,8 +220,8 @@ ggplot(aes(y = sex,
 ```
 
 ---
+class: center
 
-.pull-left[
 # Table
 
 ```{r}
@@ -237,16 +233,25 @@ mod1 <- lm(bill_depth_mm ~ flipper_length_mm + body_mass_g + bill_length_mm,
 
 tab_model(mod1)
 ```
-]
 
---
+---
 
-.pull-right[
-# Text In-line output
+# In-line value
 
 ###- The total sample size was $n$ = `r nrow(penguins1)`
 
-]
+--
+
+```{r}
+library(papaja)
+out <- apa_print(
+  t.test(yield ~ N, data = npk)
+)
+
+```
+
+###- Plant yield indeed differed between groups, `r out$full_result`.
+
 
 ---
 
@@ -260,10 +265,10 @@ background-size: cover
 ---
 
 background-image: url("https://raw.githubusercontent.com/gadenbuie/xaringanthemer/master/man/figures/logo.png")
-background-size: 15%
-background-position: 90% 1%
+background-size: 10%
+background-position: 99% 7%
 
-# xaringan + [xaringanthemer](https://github.com/gadenbuie/xaringanthemer):
+# xaringan + [xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
 
 <br>
 <br>
@@ -282,8 +287,8 @@ knitr::include_graphics("https://raw.githubusercontent.com/gadenbuie/xaringanExt
 ---
 
 background-image: url("https://raw.githubusercontent.com/jhelvy/xaringanBuilder/master/man/figures/hex_sticker.png")
-background-size: 15%
-background-position: 90% 1%
+background-size: 10%
+background-position: 99% 7%
 
 # xaringan + [xaringanBuilder](https://github.com/jhelvy/xaringanBuilder)
 
@@ -314,8 +319,9 @@ class: center
 magick::image_read("images/ajay.png") 
 ```
 
-.f2[`r icon::fa("laptop")` [Assist. Professor <br>Vishwakarm University, <br>Pune - India](https://www.vupune.ac.in/) <br>
-`r icon::fa("link")` [https://r4b.netlify.app/](https://r4b.netlify.app/) <br>
+.f2[`r icon::fa("chalkboard-teacher")` [Assist. Professor <br>Vishwakarm University, <br>Pune - India](https://www.vupune.ac.in/) 
+<br>`r icon::fa("envelope")` [koliajaykumar@gmail.com](koliajaykumar@gmail.com)
+<br>`r icon::fa("link")` [https://r4b.netlify.app/](https://r4b.netlify.app/) <br>
 `r icon::fa("twitter")`[@ajay_kolii](https://twitter.com/ajay_kolii)] 
 ]
 

@@ -94,7 +94,7 @@ a:hover, a:active, a:focus {
 }
 
 .inverse {
-  background-color: #282a36;
+  background-color: orange;
   color: #FFFFFF;
   text-shadow: none;
 }
